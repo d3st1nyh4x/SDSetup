@@ -18,7 +18,8 @@ namespace SDSetupBlazor
         public static string hostname = "http://localhost:5000";
         //public static string hostname = "https://files.sdsetup.com";
 #else
-        public static string hostname = "https://files.sdsetup.com";
+        public static string hostname = "https://files.shrekdsetup.com";
+
 #endif
 
         public static string packageset = "default24";
