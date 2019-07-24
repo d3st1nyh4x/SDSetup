@@ -114,7 +114,7 @@ namespace SDSetupBackend.Controllers {
                     if (stream == null) {
                         return new ObjectResult("Expired");
                     }
-                    string zipname = ("SDSetup(" + DateTime.Now.ToShortDateString() + ").zip").Replace("-", ".").Replace("_", ".");
+                    string zipname = ("ShrekDSetup(" + DateTime.Now.ToShortDateString() + ").zip").Replace("-", ".").Replace("_", ".");
                     Response.Headers["Content-Disposition"] = "filename=" + zipname;
                     return new FileStreamResult(stream, "application/zip");
                 } else {

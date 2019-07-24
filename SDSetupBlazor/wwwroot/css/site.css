@@ -1,4 +1,4 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+#@import url('https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -21,8 +21,8 @@ app {
 }
 
     .main .top-row {
-        background-color: #e6e6e6;
-        border-bottom: 1px solid #d6d5d5;
+        background-color: #694200;
+        border-bottom: 1px solid #694200;
     }
 
 .sidebar {
@@ -30,7 +30,7 @@ app {
 }
 
     .sidebar .top-row {
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,1);
     }
 
     .sidebar .navbar-brand {
@@ -67,13 +67,13 @@ app {
     }
 
         .nav-item a.active {
-            background-color: rgba(255,255,255,0.25);
-            color: white;
+            background-color: rgba(105,65,0,1);
+            color: red;
         }
 
         .nav-item a:hover {
-            background-color: rgba(255,255,255,0.1);
-            color: white;
+            background-color: rgba(105,65,0,1);
+            color: green;
         }
 
 .content {
@@ -120,24 +120,47 @@ app {
 		/* Never collapse the sidebar for wide screens */
 		display: block;
 	}
-
 	.docs-example {
 		position: relative;
 		padding: 1em 1em 1em;
-		border: 1px solid #BBB;
+		border: 1px solid #000000;
 		border-radius: 5px;
 		margin-top: 1.5rem;
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 1.5rem;
-		background-color: #FFFFFF;
+		background-color: #694200;
+		color: white;
+		background-color: 694200;
 	}
 
 		.docs-example .card {
 			min-width: 300px;
 			max-width: 300px;
+			background-color: #694200;
+			box-shadow: 0 0 0 1px #eaeaea inset,0 0 0 0 transparent;
+			-webkit-box-shadow: 0 0 0 1px #eaeaea inset,0 0 0 0 transparent;
 		}
-
+		.docs-example  h1
+		.docs-example  h2,
+		.docs-example  h3,
+		.docs-example  h4,
+		.docs-example  h5,
+		.docs-example  h6{
+			color:#84ab00;
+		}
+		.ui.info.message a{
+			color:#84ab00;
+		}
+		.ui.styled.fluid.accordion a{
+			color:#84ab00;
+		}
+		.content .table-responsive a{
+			color:#84ab00;
+		}
+		.docs-example .markup .ui.menu.two.item .item{
+			box-shadow: 0 0 0 1px #eaeaea inset,0 0 0 0 transparent;
+		}
 	.bg-fullheight {
 		width: 900px;
 		margin: 0 0;
@@ -163,7 +186,7 @@ app {
 		bottom: 101%;
 		right: -65%;
 		z-index: 999;
-		background-color: #aeaeae;
+		background-color: #872a1e;
 		color: white;
 		border-radius: 5px;
 		position: absolute;
@@ -195,6 +218,20 @@ app {
 		display: block;
 		visibility: visible;
 	}
+		.docs-example .card-deck .justify-content-center .card {
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			padding: 1.25rem;
+			background: #694200;
+			color: white;
+		}
+		.docs-example  h4,
+		.docs-example  h5,
+		.docs-example  h6{
+			color:#84ab00;
+		}
+		.ui.info.message a{
+			color:#84ab00;
 }
 
 .pc-tablet-only {
@@ -207,6 +244,23 @@ app {
 		display: none;
 		visibility: collapse;
 	}
+		.docs-example .card {
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			padding: 1.25rem;
+			background: #694200;
+			color: white;
+			box-shadow: 0 0 0 1px #eaeaea inset,0 0 0 0 transparent;
+			-webkit-box-shadow: 0 0 0 1px #eaeaea inset,0 0 0 0 transparent;
+		}
+		
+		.docs-example  h4,
+		.docs-example  h5,
+		.docs-example  h6{
+			color:#84ab00;
+		}
+		.ui.info.message a{
+			color:#84ab00;
 }
 
 .flex-container {
